@@ -18,5 +18,18 @@ namespace MathLib
         {
             return num1 + num2;
         }
+
+        public static bool EsPar(int Num)
+        {
+            if(Convert.ToBoolean(Num % 2 == 0))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        
     }
 }
