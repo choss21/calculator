@@ -119,7 +119,7 @@
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(381, 38);
             this.btnCalcular.TabIndex = 9;
-            this.btnCalcular.Text = "Calcular Suma";
+            this.btnCalcular.Text = "Calcular la suma";
             this.btnCalcular.UseVisualStyleBackColor = true;
             this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
