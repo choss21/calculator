@@ -39,6 +39,7 @@
             this.txtNumero1 = new System.Windows.Forms.TextBox();
             this.btnCalcular = new System.Windows.Forms.Button();
             this.lblEstatus = new System.Windows.Forms.Label();
+            this.lblNumeroLetras = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -87,7 +88,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(15, 86);
+            this.label2.Location = new System.Drawing.Point(15, 140);
             this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(111, 25);
@@ -96,7 +97,7 @@
             // 
             // txtNumero2
             // 
-            this.txtNumero2.Location = new System.Drawing.Point(135, 80);
+            this.txtNumero2.Location = new System.Drawing.Point(135, 134);
             this.txtNumero2.MaxLength = 20;
             this.txtNumero2.Name = "txtNumero2";
             this.txtNumero2.Size = new System.Drawing.Size(382, 31);
@@ -115,7 +116,7 @@
             // 
             // btnCalcular
             // 
-            this.btnCalcular.Location = new System.Drawing.Point(135, 120);
+            this.btnCalcular.Location = new System.Drawing.Point(135, 174);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(381, 38);
             this.btnCalcular.TabIndex = 9;
@@ -127,18 +128,28 @@
             // 
             this.lblEstatus.AutoSize = true;
             this.lblEstatus.BackColor = System.Drawing.Color.White;
-            this.lblEstatus.Location = new System.Drawing.Point(-5, 163);
+            this.lblEstatus.Location = new System.Drawing.Point(-5, 226);
             this.lblEstatus.Name = "lblEstatus";
             this.lblEstatus.Size = new System.Drawing.Size(156, 25);
             this.lblEstatus.TabIndex = 10;
             this.lblEstatus.Text = ". . . . . . . . . . . . ";
+            // 
+            // lblNumeroLetras
+            // 
+            this.lblNumeroLetras.AutoSize = true;
+            this.lblNumeroLetras.Location = new System.Drawing.Point(15, 88);
+            this.lblNumeroLetras.Name = "lblNumeroLetras";
+            this.lblNumeroLetras.Size = new System.Drawing.Size(42, 25);
+            this.lblNumeroLetras.TabIndex = 11;
+            this.lblNumeroLetras.Text = ". . .";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(528, 187);
+            this.ClientSize = new System.Drawing.Size(528, 265);
+            this.Controls.Add(this.lblNumeroLetras);
             this.Controls.Add(this.lblEstatus);
             this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.txtNumero1);
@@ -172,6 +183,7 @@
         private System.Windows.Forms.TextBox txtNumero1;
         private System.Windows.Forms.Button btnCalcular;
         private System.Windows.Forms.Label lblEstatus;
+        private System.Windows.Forms.Label lblNumeroLetras;
     }
 }
 

@@ -85,7 +85,14 @@ namespace Calculator
 
         private void txtNumero1_TextChanged(object sender, EventArgs e)
         {
-
+            if (string.IsNullOrEmpty(txtNumero1.Text)) return;
+            try
+            {
+                lblNumeroLetras.Text = Operaciones.NumeroALetras(Convert.ToInt32(txtNumero1.Text));
+            }
+            catch (Exception)
+            {
+            }
         }
 
 
