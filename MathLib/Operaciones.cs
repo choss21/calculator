@@ -18,5 +18,20 @@ namespace MathLib
         {
             return num1 + num2;
         }
+        public static bool esPrimo(int numero)
+        {
+            int divisor = 2;
+            int resto = 0;
+            while (divisor < numero)
+            {
+                resto = numero % divisor;
+                if (resto == 0)
+                {
+                    return false;
+                }
+                divisor = divisor + 1;
+            }
+            return true;
+        }
     }
 }
