@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Humanizer;
+using System;
 
 namespace MathLib
 {
@@ -79,6 +80,11 @@ namespace MathLib
                 }
             }
             return num2Text;
+        }
+
+        public static string HumanizerNumero(int numero)
+        {
+            return numero.ToRoman();
         }
         public static int Suma(int num1, int num2)
         {

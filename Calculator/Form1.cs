@@ -88,7 +88,8 @@ namespace Calculator
             if (string.IsNullOrEmpty(txtNumero1.Text)) return;
             try
             {
-                lblNumeroLetras.Text = Operaciones.NumeroALetras(Convert.ToInt32(txtNumero1.Text));
+                lblNumeroLetras.Text = Operaciones.HumanizerNumero(Convert.ToInt32(txtNumero1.Text));
+                //lblNumeroLetras.Text = Operaciones.NumeroALetras(Convert.ToInt32(txtNumero1.Text));
             }
             catch (Exception)
             {
