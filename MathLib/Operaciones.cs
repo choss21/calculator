@@ -33,5 +33,29 @@ namespace MathLib
             }
             return true;
         }
+
+        public static bool EsPar(int Num)
+        {
+            if(Convert.ToBoolean(Num % 2 == 0))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        
+
+        public static double factorial(double Numero) {
+
+            if (Numero == 0) {
+                return 1;
+            }
+            else {
+                return Numero * factorial(Numero - 1);
+            }
+            
+        }
     }
 }
