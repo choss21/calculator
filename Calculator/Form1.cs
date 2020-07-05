@@ -24,8 +24,10 @@ namespace Calculator
             {
                 var numero1 = Convert.ToDouble(txtNumero1.Text);
                 var numero2 = Convert.ToDouble(txtNumero2.Text);
-                var obj = new Operaciones();
-                var resultado = obj.Suma(numero1, numero2);
+                //var obj = new Operaciones();
+                //var resultado = obj.Suma(numero1, numero2);
+                var resultado = Operaciones.Suma(numero1, numero2);
+
                 MessageBox.Show("El resultado es " + resultado);
             }
             catch (Exception ex)

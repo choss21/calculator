@@ -7,13 +7,14 @@ using System.Threading.Tasks;
 
 namespace MathLib
 {
-    public class Operaciones
+    //instancia es hacer esto var variable = new NombreClase();   . . . . . . . l. .
+    public static class Operaciones
     {
-        public int Suma(int num1, int num2)
+        public static int Suma(int num1, int num2)
         {
             return num1 + num2;
         }
-        public double Suma(double num1, double num2)
+        public static double Suma(double num1, double num2)
         {
             return num1 + num2;
         }
