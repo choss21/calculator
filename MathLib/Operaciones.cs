@@ -18,5 +18,16 @@ namespace MathLib
         {
             return num1 + num2;
         }
+
+        public static double factorial(double Numero) {
+
+            if (Numero == 0) {
+                return 1;
+            }
+            else {
+                return Numero * factorial(Numero - 1);
+            }
+            
+        }
     }
 }
