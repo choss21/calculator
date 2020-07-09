@@ -4,7 +4,7 @@ using System;
 namespace MathLib
 {
     //instancia es hacer esto var variable = new NombreClase();   . . . . . . . l. .
-    public static class Operaciones
+    public static class OperacionesHelper
     {
         public static string NumeroALetras(double value)
         {

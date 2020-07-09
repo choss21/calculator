@@ -26,7 +26,7 @@ namespace Calculator
                 var numero2 = Convert.ToDouble(txtNumero2.Text);
                 //var obj = new Operaciones();
                 //var resultado = obj.Suma(numero1, numero2);
-                var resultado = Operaciones.Suma(numero1, numero2);
+                var resultado = OperacionesHelper.Suma(numero1, numero2);
 
                 MessageBox.Show("El resultado es " + resultado);
             }
@@ -88,15 +88,49 @@ namespace Calculator
             if (string.IsNullOrEmpty(txtNumero1.Text)) return;
             try
             {
-                lblNumeroLetras.Text = Operaciones.HumanizerNumero(Convert.ToInt32(txtNumero1.Text));
+                lblNumeroLetras.Text = OperacionesHelper.HumanizerNumero(Convert.ToInt32(txtNumero1.Text));
                 //lblNumeroLetras.Text = Operaciones.NumeroALetras(Convert.ToInt32(txtNumero1.Text));
             }
             catch (Exception)
             {
             }
         }
+        private void btnPruebaPolimorfismo_Click(object sender, EventArgs e)
+        {
+            //var figurasGeometricas = new FiguraGeometrica[5];
+            //figurasGeometricas[0] = new Rectangulo(2,2);
+            //figurasGeometricas[1] = new Triangulo(5,5);
+            //figurasGeometricas[2] = new Rectangulo(6,6);
+            //figurasGeometricas[3] = new Cuadrado(8);
+            //figurasGeometricas[4] = new Triangulo(9,9);
+            var figurasGeometricas = new List<FiguraGeometrica>();
+            figurasGeometricas.Add(new Rectangulo(2, 2));
+            figurasGeometricas.Add(new Triangulo(5, 5));
+            figurasGeometricas.Add(new Rectangulo(6, 6));
+            figurasGeometricas.Add(new Cuadrado(8));
+            figurasGeometricas.Add(new Triangulo(9, 9));
 
 
+            for (int i = 0; i < figurasGeometricas.Count(); i++)
+            {
+                MessageBox.Show($"El area del {figurasGeometricas[i].TipoFigura} {i + 1} es: {figurasGeometricas[i].CalcularArea()} ");
+            }
+
+            //var objCuadrado = new Cuadrado(5);
+            //var areaCuadrado = objCuadrado.CalcularArea();
+            //MessageBox.Show("El area del cuadrado de lado " + objCuadrado.TamanioLado + " es: " + areaCuadrado);
+
+            //var objRectangulo = new Rectangulo(10, 5, "Verde");
+            //var areaRectangulo = objRectangulo.CalcularArea();
+            //MessageBox.Show(string.Format("El area del rectangulo de base {0} y altura {1} es {2}", objRectangulo.Base, objRectangulo.Altura, areaRectangulo));
+
+            //var objTriangulo = new Triangulo(20, 30);
+            //var areaTriangulo = objTriangulo.CalcularArea();
+            //MessageBox.Show($"El area del triangulo de base {objTriangulo.Base} y altura {objTriangulo.Altura} es {areaTriangulo}");
+
+
+
+        }
     }
 
 }

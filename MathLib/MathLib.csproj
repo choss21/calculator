@@ -44,10 +44,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Operaciones.cs" />
+    <Compile Include="Cuadrado.cs" />
+    <Compile Include="DivicionOperacion.cs" />
+    <Compile Include="FiguraGeometrica.cs" />
+    <Compile Include="MultiplicacionOperacion.cs" />
+    <Compile Include="OperacionAritmetica.cs" />
+    <Compile Include="OperacionesHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rectangulo.cs" />
+    <Compile Include="RestaOperacion.cs" />
+    <Compile Include="SumaOperacion.cs" />
+    <Compile Include="Triangulo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
