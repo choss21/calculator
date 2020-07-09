@@ -44,7 +44,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Operaciones.cs" />
+    <Compile Include="RestaOperacion.cs" />
+    <Compile Include="SumaOperacion.cs" />
+    <Compile Include="OperacionesAritmeticas.cs" />
+    <Compile Include="OperacionesHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
