@@ -26,7 +26,7 @@ namespace Calculator
                 var numero2 = Convert.ToDouble(txtNumero2.Text);
                 //var obj = new Operaciones();
                 //var resultado = obj.Suma(numero1, numero2);
-                var resultado = Operaciones.Suma(numero1, numero2);
+                var resultado = OperacionesHelper.Suma(numero1, numero2);
 
                 MessageBox.Show("El resultado es " + resultado);
             }
@@ -88,7 +88,7 @@ namespace Calculator
             if (string.IsNullOrEmpty(txtNumero1.Text)) return;
             try
             {
-                lblNumeroLetras.Text = Operaciones.HumanizerNumero(Convert.ToInt32(txtNumero1.Text));
+                lblNumeroLetras.Text = OperacionesHelper.HumanizerNumero(Convert.ToInt32(txtNumero1.Text));
                 //lblNumeroLetras.Text = Operaciones.NumeroALetras(Convert.ToInt32(txtNumero1.Text));
             }
             catch (Exception)
