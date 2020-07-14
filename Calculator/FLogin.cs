@@ -36,7 +36,7 @@ namespace Calculator
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             //Ejemplo de conexion a base de datos
-            var cadenaDeConexion = "server=(local); database=Alumnos ; integrated security=true";
+            var cadenaDeConexion = "server=(local); database=Alumnos; integrated security=true";
             var conexion = new SqlConnection(cadenaDeConexion);
 
             SqlCommand command = new SqlCommand("SELECT * FROM Alumnos;", conexion);
