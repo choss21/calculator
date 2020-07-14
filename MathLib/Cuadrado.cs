@@ -9,11 +9,13 @@ namespace MathLib
     public class Cuadrado : FiguraGeometrica
     {
 
-
         public override string TipoFigura => "Cuadrado";
 
         public override int NumeroLados => 4;
-        public double TamanioLado { get;  }
+        public double TamanioLado
+        {
+            get;
+        }
 
         public Cuadrado(double tamanioLado, string color = "Blanco")
         {

@@ -27,14 +27,12 @@ namespace Calculator
                 //var obj = new Operaciones();
                 //var resultado = obj.Suma(numero1, numero2);
                 var resultado = OperacionesHelper.Suma(numero1, numero2);
-
                 MessageBox.Show("El resultado es " + resultado);
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Ocurrio un error " + ex.Message);
             }
-
 
             //int variable1 = 10;
             //string variable2 = "10";
