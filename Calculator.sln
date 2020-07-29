@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator", "Calculator\Ca
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathLib", "MathLib\MathLib.csproj", "{A59095E3-0E26-40D0-80C8-D013646632E9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator.BO", "Calculator.BO\Calculator.BO.csproj", "{CEA9BA5A-F7AA-43C9-A43A-39CAAB068FE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator.Model", "Calculator.Model\Calculator.Model.csproj", "{6B3FD498-0F0D-43C4-BC50-2946E77420C6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{A59095E3-0E26-40D0-80C8-D013646632E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A59095E3-0E26-40D0-80C8-D013646632E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A59095E3-0E26-40D0-80C8-D013646632E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEA9BA5A-F7AA-43C9-A43A-39CAAB068FE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEA9BA5A-F7AA-43C9-A43A-39CAAB068FE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEA9BA5A-F7AA-43C9-A43A-39CAAB068FE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEA9BA5A-F7AA-43C9-A43A-39CAAB068FE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B3FD498-0F0D-43C4-BC50-2946E77420C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B3FD498-0F0D-43C4-BC50-2946E77420C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B3FD498-0F0D-43C4-BC50-2946E77420C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B3FD498-0F0D-43C4-BC50-2946E77420C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
