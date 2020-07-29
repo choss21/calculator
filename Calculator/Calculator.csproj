@@ -46,7 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Alumno.cs" />
     <Compile Include="FLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +93,14 @@
     <None Include="Resources\cheque-48.png" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Calculator.BO\Calculator.BO.csproj">
+      <Project>{cd987469-117c-46cc-bdc5-a4f5e1179bdd}</Project>
+      <Name>Calculator.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Calculator.Model\Calculator.Model.csproj">
+      <Project>{470a84d5-807b-42d2-8af0-f2023b0f1cff}</Project>
+      <Name>Calculator.Model</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MathLib\MathLib.csproj">
       <Project>{a59095e3-0e26-40d0-80c8-d013646632e9}</Project>
       <Name>MathLib</Name>
