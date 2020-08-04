@@ -40,6 +40,7 @@
             this.btnCalcular = new System.Windows.Forms.Button();
             this.lblEstatus = new System.Windows.Forms.Label();
             this.lblNumeroLetras = new System.Windows.Forms.Label();
+            this.btnPruebaPolimorfismo = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -128,7 +129,7 @@
             // 
             this.lblEstatus.AutoSize = true;
             this.lblEstatus.BackColor = System.Drawing.Color.White;
-            this.lblEstatus.Location = new System.Drawing.Point(-5, 226);
+            this.lblEstatus.Location = new System.Drawing.Point(-5, 277);
             this.lblEstatus.Name = "lblEstatus";
             this.lblEstatus.Size = new System.Drawing.Size(156, 25);
             this.lblEstatus.TabIndex = 10;
@@ -143,12 +144,23 @@
             this.lblNumeroLetras.TabIndex = 11;
             this.lblNumeroLetras.Text = ". . .";
             // 
+            // btnPruebaPolimorfismo
+            // 
+            this.btnPruebaPolimorfismo.Location = new System.Drawing.Point(135, 220);
+            this.btnPruebaPolimorfismo.Name = "btnPruebaPolimorfismo";
+            this.btnPruebaPolimorfismo.Size = new System.Drawing.Size(381, 38);
+            this.btnPruebaPolimorfismo.TabIndex = 12;
+            this.btnPruebaPolimorfismo.Text = "Prueba de polimorfismo";
+            this.btnPruebaPolimorfismo.UseVisualStyleBackColor = true;
+            this.btnPruebaPolimorfismo.Click += new System.EventHandler(this.btnPruebaPolimorfismo_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(528, 265);
+            this.ClientSize = new System.Drawing.Size(528, 311);
+            this.Controls.Add(this.btnPruebaPolimorfismo);
             this.Controls.Add(this.lblNumeroLetras);
             this.Controls.Add(this.lblEstatus);
             this.Controls.Add(this.btnCalcular);
@@ -184,6 +196,7 @@
         private System.Windows.Forms.Button btnCalcular;
         private System.Windows.Forms.Label lblEstatus;
         private System.Windows.Forms.Label lblNumeroLetras;
+        private System.Windows.Forms.Button btnPruebaPolimorfismo;
     }
 }
 

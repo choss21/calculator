@@ -1,10 +1,10 @@
 ﻿namespace MathLib
 {
-    public class RestaOperacion : OperacionAritmetica
+    public class DivicionOperacion : OperacionAritmetica
     {
         public override void RealizarOperacion()
         {
-            Resultado = Numero1 - Numero2;
+            Resultado = Numero1 / Numero2;
         }
     }
 }

@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLogin.Designer.cs">
+      <DependentUpon>FLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +60,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FLogin.resx">
+      <DependentUpon>FLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -84,6 +93,14 @@
     <None Include="Resources\cheque-48.png" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Calculator.BO\Calculator.BO.csproj">
+      <Project>{cd987469-117c-46cc-bdc5-a4f5e1179bdd}</Project>
+      <Name>Calculator.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Calculator.Model\Calculator.Model.csproj">
+      <Project>{470a84d5-807b-42d2-8af0-f2023b0f1cff}</Project>
+      <Name>Calculator.Model</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MathLib\MathLib.csproj">
       <Project>{a59095e3-0e26-40d0-80c8-d013646632e9}</Project>
       <Name>MathLib</Name>

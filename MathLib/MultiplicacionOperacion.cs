@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace MathLib
 {
-    public class SumaOperacion : OperacionAritmetica
+    public class MultiplicacionOperacion : OperacionAritmetica
     {
         public override void RealizarOperacion()
         {
-            Resultado = Numero1 + Numero2;
+            Resultado = Numero1 * Numero2;
         }
     }
 }
