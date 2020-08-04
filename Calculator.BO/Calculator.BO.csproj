@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0E5DB5E7-468F-40CC-9D20-83D603ED6171}</ProjectGuid>
+    <ProjectGuid>{CD987469-117C-46CC-BDC5-A4F5E1179BDD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Calculator.BO</RootNamespace>
@@ -41,7 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Alumnos.cs" />
+    <Compile Include="Alumno.cs" />
     <Compile Include="Carrera.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
