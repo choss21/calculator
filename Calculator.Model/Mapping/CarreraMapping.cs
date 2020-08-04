@@ -7,8 +7,7 @@ using System.Threading.Tasks;
 
 namespace Calculator.Model.Mapping
 {
-    public class AlumnoMapping : EntityTypeConfiguration<BO.Alumno>
+    public class CarreraMapping : EntityTypeConfiguration<BO.Carrera>
     {
-
     }
 }
