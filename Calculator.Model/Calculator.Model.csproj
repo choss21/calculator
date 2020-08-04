@@ -54,6 +54,8 @@
     <Compile Include="Context\Mapping\AlumnoMapping.cs" />
     <Compile Include="Context\Mapping\CarreraMapping.cs" />
     <Compile Include="Context\ModelContext.cs" />
+    <Compile Include="Mapping\AlumnoMapping.cs" />
+    <Compile Include="Mapping\CarreraMapping.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
