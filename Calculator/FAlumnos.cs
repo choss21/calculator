@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Calculator.BO;
+using Calculator.Model.Context;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,9 +19,19 @@ namespace Calculator
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void btnGuardarCarrera_Click(object sender, EventArgs e)
         {
+            var carreraNueva = new Carrera()
+            {
+                Nombre = txtCarrera.Text,
+                Clave = txtClaveCarrera.Text
+            };
+            var context = new ModelContext();
+            context.Carreras.Add(carreraNueva);
+            context.SaveChanges();
 
+
+            gridCarreras.DataSource = context.Carreras.ToList();
         }
     }
 }
