@@ -61,7 +61,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gridAlumnos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridAlumnos.Location = new System.Drawing.Point(13, 262);
-            this.gridAlumnos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gridAlumnos.Margin = new System.Windows.Forms.Padding(4);
             this.gridAlumnos.Name = "gridAlumnos";
             this.gridAlumnos.Size = new System.Drawing.Size(685, 440);
             this.gridAlumnos.TabIndex = 0;
@@ -109,7 +109,7 @@
             // txtMatricula
             // 
             this.txtMatricula.Location = new System.Drawing.Point(186, 8);
-            this.txtMatricula.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMatricula.Margin = new System.Windows.Forms.Padding(4);
             this.txtMatricula.Name = "txtMatricula";
             this.txtMatricula.Size = new System.Drawing.Size(337, 24);
             this.txtMatricula.TabIndex = 5;
@@ -117,7 +117,7 @@
             // txtNombres
             // 
             this.txtNombres.Location = new System.Drawing.Point(186, 38);
-            this.txtNombres.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombres.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombres.Name = "txtNombres";
             this.txtNombres.Size = new System.Drawing.Size(337, 24);
             this.txtNombres.TabIndex = 6;
@@ -202,6 +202,7 @@
             this.btnGuardar.TabIndex = 15;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // label8
             // 
@@ -288,7 +289,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.gridAlumnos);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FAlumnos";
             this.Text = "Listado de Alumnos";
             ((System.ComponentModel.ISupportInitialize)(this.gridAlumnos)).EndInit();

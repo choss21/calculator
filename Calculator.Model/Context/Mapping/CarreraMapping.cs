@@ -13,7 +13,7 @@ namespace Calculator.Model.Context.Mapping
         public CarreraMapping()
         {
             ToTable("Carreras");
-            Has
+            
         }
     }
 }
