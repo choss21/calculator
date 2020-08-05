@@ -50,21 +50,29 @@
             this.txtClaveCarrera = new System.Windows.Forms.TextBox();
             this.btnGuardarCarrera = new System.Windows.Forms.Button();
             this.gridCarreras = new System.Windows.Forms.DataGridView();
+            this.btnPrepararNuevo = new System.Windows.Forms.Button();
+            this.btnEliminarAlumno = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gridAlumnos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridCarreras)).BeginInit();
             this.SuspendLayout();
             // 
             // gridAlumnos
             // 
+            this.gridAlumnos.AllowUserToAddRows = false;
+            this.gridAlumnos.AllowUserToDeleteRows = false;
             this.gridAlumnos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gridAlumnos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridAlumnos.Location = new System.Drawing.Point(13, 262);
-            this.gridAlumnos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gridAlumnos.Margin = new System.Windows.Forms.Padding(4);
+            this.gridAlumnos.MultiSelect = false;
             this.gridAlumnos.Name = "gridAlumnos";
-            this.gridAlumnos.Size = new System.Drawing.Size(685, 440);
+            this.gridAlumnos.ReadOnly = true;
+            this.gridAlumnos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.gridAlumnos.Size = new System.Drawing.Size(709, 440);
             this.gridAlumnos.TabIndex = 0;
+            this.gridAlumnos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridAlumnos_CellDoubleClick);
             // 
             // label1
             // 
@@ -109,21 +117,23 @@
             // txtMatricula
             // 
             this.txtMatricula.Location = new System.Drawing.Point(186, 8);
-            this.txtMatricula.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMatricula.Margin = new System.Windows.Forms.Padding(4);
             this.txtMatricula.Name = "txtMatricula";
             this.txtMatricula.Size = new System.Drawing.Size(337, 24);
             this.txtMatricula.TabIndex = 5;
             // 
             // txtNombres
             // 
+            this.txtNombres.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtNombres.Location = new System.Drawing.Point(186, 38);
-            this.txtNombres.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombres.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombres.Name = "txtNombres";
             this.txtNombres.Size = new System.Drawing.Size(337, 24);
             this.txtNombres.TabIndex = 6;
             // 
             // txtApellidoPaterno
             // 
+            this.txtApellidoPaterno.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtApellidoPaterno.Location = new System.Drawing.Point(186, 68);
             this.txtApellidoPaterno.Margin = new System.Windows.Forms.Padding(4);
             this.txtApellidoPaterno.Name = "txtApellidoPaterno";
@@ -132,6 +142,7 @@
             // 
             // txtApellidoMaterno
             // 
+            this.txtApellidoMaterno.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtApellidoMaterno.Location = new System.Drawing.Point(186, 100);
             this.txtApellidoMaterno.Margin = new System.Windows.Forms.Padding(4);
             this.txtApellidoMaterno.Name = "txtApellidoMaterno";
@@ -202,6 +213,7 @@
             this.btnGuardar.TabIndex = 15;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // label8
             // 
@@ -251,20 +263,45 @@
             // 
             // gridCarreras
             // 
+            this.gridCarreras.AllowUserToAddRows = false;
+            this.gridCarreras.AllowUserToDeleteRows = false;
             this.gridCarreras.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gridCarreras.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridCarreras.Location = new System.Drawing.Point(706, 262);
+            this.gridCarreras.Location = new System.Drawing.Point(730, 262);
             this.gridCarreras.Margin = new System.Windows.Forms.Padding(4);
             this.gridCarreras.Name = "gridCarreras";
+            this.gridCarreras.ReadOnly = true;
             this.gridCarreras.Size = new System.Drawing.Size(282, 440);
             this.gridCarreras.TabIndex = 21;
+            // 
+            // btnPrepararNuevo
+            // 
+            this.btnPrepararNuevo.Location = new System.Drawing.Point(186, 223);
+            this.btnPrepararNuevo.Name = "btnPrepararNuevo";
+            this.btnPrepararNuevo.Size = new System.Drawing.Size(185, 29);
+            this.btnPrepararNuevo.TabIndex = 22;
+            this.btnPrepararNuevo.Text = "Limpiar para nuevo";
+            this.btnPrepararNuevo.UseVisualStyleBackColor = true;
+            this.btnPrepararNuevo.Click += new System.EventHandler(this.btnPrepararNuevo_Click);
+            // 
+            // btnEliminarAlumno
+            // 
+            this.btnEliminarAlumno.Location = new System.Drawing.Point(549, 231);
+            this.btnEliminarAlumno.Name = "btnEliminarAlumno";
+            this.btnEliminarAlumno.Size = new System.Drawing.Size(172, 31);
+            this.btnEliminarAlumno.TabIndex = 23;
+            this.btnEliminarAlumno.Text = "Eliminar Seleccionado";
+            this.btnEliminarAlumno.UseVisualStyleBackColor = true;
+            this.btnEliminarAlumno.Click += new System.EventHandler(this.btnEliminarAlumno_Click);
             // 
             // FAlumnos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(991, 729);
+            this.ClientSize = new System.Drawing.Size(1015, 729);
+            this.Controls.Add(this.btnEliminarAlumno);
+            this.Controls.Add(this.btnPrepararNuevo);
             this.Controls.Add(this.gridCarreras);
             this.Controls.Add(this.btnGuardarCarrera);
             this.Controls.Add(this.txtClaveCarrera);
@@ -288,9 +325,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.gridAlumnos);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FAlumnos";
             this.Text = "Listado de Alumnos";
+            this.Load += new System.EventHandler(this.FAlumnos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridAlumnos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridCarreras)).EndInit();
             this.ResumeLayout(false);
@@ -322,5 +360,7 @@
         private System.Windows.Forms.TextBox txtClaveCarrera;
         private System.Windows.Forms.Button btnGuardarCarrera;
         private System.Windows.Forms.DataGridView gridCarreras;
+        private System.Windows.Forms.Button btnPrepararNuevo;
+        private System.Windows.Forms.Button btnEliminarAlumno;
     }
 }

@@ -11,6 +11,7 @@ namespace Calculator.BO
         public DateTime? FechaNacimiento { get; set; }
         public string Correo { get; set; }
         public int? CarreraId { get; set; }
-        public Carrera Carrera { get; set; }
+        //el virtual es para que LazyLoading Funcione
+        public virtual Carrera Carrera { get; set; }
     }
 }
